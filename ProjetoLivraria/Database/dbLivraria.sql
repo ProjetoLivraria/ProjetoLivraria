@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS dblivraria;
+USE dblivraria;
+
+CREATE TABLE IF NOT EXISTS login(
+	id INT auto_increment primary key,
+	nome varchar(100) not null,
+	email varchar(100) not null unique,
+	senha varchar(100),
+	senhahash varchar(100) not null
+);
+
+CREATE TABLE IF NOT EXISTS livro(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	isbn VARCHAR(100) NOT NULL UNIQUE,
+	nome VARCHAR(60) NOT NULL,
+	descricao VARCHAR(200) NOT NULL,
+	valor DOUBLE(6,2) NOT NULL
+);
