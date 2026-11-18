@@ -16,3 +16,4 @@ CREATE TABLE IF NOT EXISTS livro(
 	descricao VARCHAR(200) NOT NULL,
 	valor DOUBLE(6,2) NOT NULL
 );
+
